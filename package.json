@@ -8,6 +8,7 @@
   "dependencies": {
     "request": "*",
     "express": "*",
+    "d3": "*",
     "jade": "*"
   }
 }
