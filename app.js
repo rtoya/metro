@@ -1,21 +1,30 @@
-var d3 = require("d3");
-var svg = d3.select("body")
-  .append("svg")
-  .attr({
-    "xmlns": "http://www.w3.org/2000/svg",
-    "width": 750,
-    "height": 750
-  });
+var express = require('express');
+var app = express();
+ 
+app.get('/', function(req, res) {
+  res.send('hello world');
+});
+ 
+app.listen(3000);
 
-  svg.append('circle')
-    .attr({
-      cx:100,
-      cy:100,
-      r:80,
-      fill:'red'
-    })
+// var d3 = require("d3");
+// var svg = d3.select("body")
+//   .append("svg")
+//   .attr({
+//     "xmlns": "http://www.w3.org/2000/svg",
+//     "width": 750,
+//     "height": 750
+//   });
 
-console.log(d3.select('body').node().innerHTML); //JSDOMから出力
+//   svg.append('circle')
+//     .attr({
+//       cx:100,
+//       cy:100,
+//       r:80,
+//       fill:'red'
+//     })
+
+// console.log(d3.select('body').node().innerHTML); //JSDOMから出力
 
 
 /*
