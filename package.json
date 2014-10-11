@@ -9,6 +9,8 @@
     "request": "*",
     "express": "*",
     "d3": "*",
-    "jade": "*"
+    "jade": "*",
+    "socket.io": "*",
+    "http": "*"
   }
 }
